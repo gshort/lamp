@@ -1,15 +1,15 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/gshort/Documents/eagle/ANA/lamp.brd
+Job           : /Users/gshort/Documents/eagle/lamp/lamp.brd
 
-Start at      : 22:38:13 (2/16/14)
-End at        : 22:38:13 (2/16/14)
+Start at      : 22:03:02 (2/26/14)
+End at        : 22:03:02 (2/26/14)
 Elapsed time  : 00:00:00
 
-Signals       :    40   RoutingGrid: 50 mil  Layers: 2
+Signals       :    39   RoutingGrid: 50 mil  Layers: 2
 Connections   :    50   predefined:  0 ( 0 Vias )
 
-Router memory :   29648
+Router memory :   17712
 
 Passname          :    Busses     Route Optimize1 Optimize2 Optimize3 Optimize4
 
@@ -18,8 +18,8 @@ Number of Ripups  :         0         0         0         0         0         0
 max. Level        :         0         2         0         0         0         0
 max. Total        :         0         1         0         0         0         0
 
-Routed            :         2        36        36        36        36        36
-Vias              :         0         8         0         0         0         0
-Resolution        :     4.0 %    72.0 %    72.0 %    72.0 %    72.0 %    72.0 %
+Routed            :         9        45        45        45        45        45
+Vias              :         0        18         7         7         7         7
+Resolution        :    18.0 %    90.0 %    90.0 %    90.0 %    90.0 %    90.0 %
 
-Final             : 72.0% finished
+Final             : 90.0% finished
