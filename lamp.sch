@@ -659,8 +659,8 @@
 <part name="P+3" library=" Barebones-Arduino" deviceset="+12V" device=""/>
 <part name="GND5" library=" Barebones-Arduino" deviceset="GND" device=""/>
 <part name="LR" library="lamp" deviceset="LP2985" device=""/>
-<part name="C1" library=" Barebones-Arduino" deviceset="CAPACITOR" device="-SMD"/>
-<part name="C2" library=" Barebones-Arduino" deviceset="CAPACITOR" device="-SMD"/>
+<part name="C1" library=" Barebones-Arduino" deviceset="CAPACITOR" device="-SMD" value="1µF"/>
+<part name="C2" library=" Barebones-Arduino" deviceset="CAPACITOR" device="-SMD" value="2.2µF"/>
 <part name="P+4" library=" Barebones-Arduino" deviceset="+5V" device=""/>
 <part name="PB1" library="wirepad" deviceset="SMD2" device=""/>
 <part name="PB2" library="wirepad" deviceset="SMD2" device=""/>
@@ -670,6 +670,8 @@
 <part name="PB0" library="wirepad" deviceset="SMD2" device=""/>
 <part name="VCC" library="wirepad" deviceset="SMD2" device=""/>
 <part name="GND" library="wirepad" deviceset="SMD2" device=""/>
+<part name="C3" library=" Barebones-Arduino" deviceset="CAPACITOR" device="-SMD" value="10nF"/>
+<part name="GND4" library=" Barebones-Arduino" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -722,12 +724,12 @@
 <instance part="GND1" gate="1" x="45.72" y="25.4"/>
 <instance part="GND2" gate="1" x="-12.7" y="30.48"/>
 <instance part="P+2" gate="1" x="17.78" y="58.42"/>
-<instance part="GND3" gate="1" x="63.5" y="73.66"/>
+<instance part="GND3" gate="1" x="68.58" y="73.66"/>
 <instance part="P+3" gate="1" x="17.78" y="93.98"/>
 <instance part="GND5" gate="1" x="27.94" y="78.74"/>
 <instance part="LR" gate="G$1" x="45.72" y="81.28"/>
 <instance part="C1" gate="G$1" x="25.4" y="86.36"/>
-<instance part="C2" gate="G$1" x="63.5" y="81.28"/>
+<instance part="C2" gate="G$1" x="68.58" y="81.28"/>
 <instance part="P+4" gate="1" x="73.66" y="88.9"/>
 <instance part="PB1" gate="1" x="22.86" y="40.64" rot="R180"/>
 <instance part="PB2" gate="1" x="22.86" y="45.72" rot="R180"/>
@@ -737,6 +739,8 @@
 <instance part="PB0" gate="1" x="22.86" y="35.56" rot="R180"/>
 <instance part="VCC" gate="1" x="22.86" y="50.8" rot="R180"/>
 <instance part="GND" gate="1" x="-17.78" y="35.56"/>
+<instance part="C3" gate="G$1" x="58.42" y="76.2"/>
+<instance part="GND4" gate="1" x="58.42" y="68.58"/>
 </instances>
 <busses>
 </busses>
@@ -1086,6 +1090,10 @@
 <wire x1="-12.7" y1="35.56" x2="-12.7" y2="33.02" width="0.1524" layer="91"/>
 <junction x="-12.7" y="35.56"/>
 </segment>
+<segment>
+<pinref part="C3" gate="G$1" pin="2"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="N$15" class="0">
 <segment>
@@ -1093,9 +1101,9 @@
 <wire x1="73.66" y1="86.36" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="LR" gate="G$1" pin="VOUT"/>
 <pinref part="C2" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="83.82" x2="63.5" y2="83.82" width="0.1524" layer="91"/>
-<junction x="63.5" y="83.82"/>
-<wire x1="71.12" y1="83.82" x2="63.5" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="83.82" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
+<junction x="68.58" y="83.82"/>
+<wire x1="71.12" y1="83.82" x2="68.58" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="UC" gate="G$1" pin="VCC"/>
@@ -1181,6 +1189,12 @@
 <wire x1="45.72" y1="33.02" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="33.02" x2="45.72" y2="33.02" width="0.1524" layer="91"/>
 <junction x="45.72" y="33.02"/>
+</segment>
+</net>
+<net name="N$46" class="0">
+<segment>
+<pinref part="LR" gate="G$1" pin="BYPASS"/>
+<pinref part="C3" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>

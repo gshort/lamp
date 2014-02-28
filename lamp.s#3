@@ -127,12 +127,12 @@
 <packages>
 <package name="SOIC-18">
 <wire x1="6.0325" y1="3.81" x2="-6.0325" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-6.0325" y1="3.81" x2="-6.0325" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-6.0325" y1="-2.54" x2="-6.0325" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-6.0325" y1="3.81" x2="-6.0325" y2="-2.3495" width="0.127" layer="21"/>
+<wire x1="-6.0325" y1="-2.3495" x2="-6.0325" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="-6.0325" y1="-3.81" x2="-4.60375" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="-4.60375" y1="-3.81" x2="6.0325" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="6.0325" y1="-3.81" x2="6.0325" y2="3.81" width="0.127" layer="21"/>
-<wire x1="-6.0325" y1="-2.54" x2="-4.60375" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-6.0325" y1="-2.3495" x2="-4.60375" y2="-3.81" width="0.127" layer="21"/>
 <text x="-7.3025" y="0" size="1.27" layer="21" rot="R90" align="center">&gt;NAME</text>
 <smd name="P$1" x="-5.08" y="-5.08" dx="1.27" dy="0.635" layer="1" rot="R90"/>
 <smd name="P$2" x="-3.81" y="-5.08" dx="1.27" dy="0.635" layer="1" rot="R90"/>
@@ -189,13 +189,9 @@
 <smd name="P$3" x="0.92" y="-1.32" dx="1.05" dy="0.6" layer="1" rot="R90"/>
 <smd name="P$4" x="0.92" y="1.37" dx="1.05" dy="0.6" layer="1" rot="R90"/>
 <smd name="P$5" x="-0.92" y="1.37" dx="1.05" dy="0.6" layer="1" rot="R90"/>
-<wire x1="-1.525" y1="-0.875" x2="-0.65" y2="-0.875" width="0.127" layer="21"/>
-<wire x1="-0.65" y1="-0.875" x2="1.525" y2="-0.875" width="0.127" layer="21"/>
 <wire x1="1.525" y1="-0.875" x2="1.525" y2="0.925" width="0.127" layer="21"/>
-<wire x1="1.525" y1="0.925" x2="-1.525" y2="0.925" width="0.127" layer="21"/>
-<wire x1="-1.525" y1="0.925" x2="-1.525" y2="0" width="0.127" layer="21"/>
-<wire x1="-1.525" y1="0" x2="-1.525" y2="-0.875" width="0.127" layer="21"/>
-<wire x1="-1.525" y1="0" x2="-0.65" y2="-0.875" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.925" x2="-0.4" y2="0.925" width="0.127" layer="21"/>
+<wire x1="-1.525" y1="0.925" x2="-1.525" y2="-0.875" width="0.127" layer="21"/>
 <text x="-2.8" y="0" size="1.27" layer="25" rot="R90" align="center">&gt;NAME</text>
 </package>
 </packages>
@@ -243,8 +239,8 @@
 <vertex x="2.2225" y="2.2225"/>
 <vertex x="2.54" y="1.905"/>
 </polygon>
-<pin name="P$1" x="-2.54" y="0" visible="off" length="short"/>
-<pin name="P$2" x="5.08" y="0" visible="off" length="short" rot="R180"/>
+<pin name="P$2" x="-2.54" y="0" visible="off" length="short"/>
+<pin name="P$4" x="5.08" y="0" visible="off" length="short" rot="R180"/>
 </symbol>
 <symbol name="ATTINY45">
 <pin name="PB5" x="-12.7" y="7.62" length="middle"/>
@@ -316,8 +312,8 @@
 <devices>
 <device name="" package="PLCC4">
 <connects>
-<connect gate="G$1" pin="P$1" pad="P$2"/>
-<connect gate="G$1" pin="P$2" pad="P$4"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+<connect gate="G$1" pin="P$4" pad="P$4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -663,8 +659,8 @@
 <part name="P+3" library=" Barebones-Arduino" deviceset="+12V" device=""/>
 <part name="GND5" library=" Barebones-Arduino" deviceset="GND" device=""/>
 <part name="LR" library="lamp" deviceset="LP2985" device=""/>
-<part name="C1" library=" Barebones-Arduino" deviceset="CAPACITOR" device="-SMD"/>
-<part name="C2" library=" Barebones-Arduino" deviceset="CAPACITOR" device="-SMD"/>
+<part name="C1" library=" Barebones-Arduino" deviceset="CAPACITOR" device="-SMD" value="1µF"/>
+<part name="C2" library=" Barebones-Arduino" deviceset="CAPACITOR" device="-SMD" value="2.2µF"/>
 <part name="P+4" library=" Barebones-Arduino" deviceset="+5V" device=""/>
 <part name="PB1" library="wirepad" deviceset="SMD2" device=""/>
 <part name="PB2" library="wirepad" deviceset="SMD2" device=""/>
@@ -747,146 +743,146 @@
 <nets>
 <net name="N$1" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="P$2"/>
-<pinref part="U$3" gate="G$1" pin="P$1"/>
+<pinref part="U$2" gate="G$1" pin="P$4"/>
+<pinref part="U$3" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="U$4" gate="G$1" pin="P$2"/>
+<pinref part="U$4" gate="G$1" pin="P$4"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="P$2"/>
-<pinref part="U$4" gate="G$1" pin="P$1"/>
+<pinref part="U$3" gate="G$1" pin="P$4"/>
+<pinref part="U$4" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="P$2"/>
-<pinref part="U$6" gate="G$1" pin="P$1"/>
+<pinref part="U$5" gate="G$1" pin="P$4"/>
+<pinref part="U$6" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="U$7" gate="G$1" pin="P$2"/>
+<pinref part="U$7" gate="G$1" pin="P$4"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="P$2"/>
-<pinref part="U$7" gate="G$1" pin="P$1"/>
+<pinref part="U$6" gate="G$1" pin="P$4"/>
+<pinref part="U$7" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U$8" gate="G$1" pin="P$2"/>
-<pinref part="U$9" gate="G$1" pin="P$1"/>
+<pinref part="U$8" gate="G$1" pin="P$4"/>
+<pinref part="U$9" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="U$10" gate="G$1" pin="P$2"/>
+<pinref part="U$10" gate="G$1" pin="P$4"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U$9" gate="G$1" pin="P$2"/>
-<pinref part="U$10" gate="G$1" pin="P$1"/>
+<pinref part="U$9" gate="G$1" pin="P$4"/>
+<pinref part="U$10" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="U$11" gate="G$1" pin="P$2"/>
-<pinref part="U$12" gate="G$1" pin="P$1"/>
+<pinref part="U$11" gate="G$1" pin="P$4"/>
+<pinref part="U$12" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
-<pinref part="U$13" gate="G$1" pin="P$2"/>
+<pinref part="U$13" gate="G$1" pin="P$4"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="U$12" gate="G$1" pin="P$2"/>
-<pinref part="U$13" gate="G$1" pin="P$1"/>
+<pinref part="U$12" gate="G$1" pin="P$4"/>
+<pinref part="U$13" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="U$20" gate="G$1" pin="P$2"/>
-<pinref part="U$21" gate="G$1" pin="P$1"/>
+<pinref part="U$20" gate="G$1" pin="P$4"/>
+<pinref part="U$21" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
-<pinref part="U$22" gate="G$1" pin="P$2"/>
+<pinref part="U$22" gate="G$1" pin="P$4"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
-<pinref part="U$21" gate="G$1" pin="P$2"/>
-<pinref part="U$22" gate="G$1" pin="P$1"/>
+<pinref part="U$21" gate="G$1" pin="P$4"/>
+<pinref part="U$22" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
-<pinref part="U$23" gate="G$1" pin="P$2"/>
-<pinref part="U$24" gate="G$1" pin="P$1"/>
+<pinref part="U$23" gate="G$1" pin="P$4"/>
+<pinref part="U$24" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="U$25" gate="G$1" pin="P$2"/>
+<pinref part="U$25" gate="G$1" pin="P$4"/>
 </segment>
 </net>
 <net name="N$24" class="0">
 <segment>
-<pinref part="U$24" gate="G$1" pin="P$2"/>
-<pinref part="U$25" gate="G$1" pin="P$1"/>
+<pinref part="U$24" gate="G$1" pin="P$4"/>
+<pinref part="U$25" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="U$26" gate="G$1" pin="P$2"/>
-<pinref part="U$27" gate="G$1" pin="P$1"/>
+<pinref part="U$26" gate="G$1" pin="P$4"/>
+<pinref part="U$27" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$26" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
-<pinref part="U$28" gate="G$1" pin="P$2"/>
+<pinref part="U$28" gate="G$1" pin="P$4"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="U$27" gate="G$1" pin="P$2"/>
-<pinref part="U$28" gate="G$1" pin="P$1"/>
+<pinref part="U$27" gate="G$1" pin="P$4"/>
+<pinref part="U$28" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
-<pinref part="U$29" gate="G$1" pin="P$2"/>
-<pinref part="U$30" gate="G$1" pin="P$1"/>
+<pinref part="U$29" gate="G$1" pin="P$4"/>
+<pinref part="U$30" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
-<pinref part="U$31" gate="G$1" pin="P$2"/>
+<pinref part="U$31" gate="G$1" pin="P$4"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="U$30" gate="G$1" pin="P$2"/>
-<pinref part="U$31" gate="G$1" pin="P$1"/>
+<pinref part="U$30" gate="G$1" pin="P$4"/>
+<pinref part="U$31" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -923,19 +919,19 @@
 <junction x="134.62" y="15.24"/>
 <wire x1="132.08" y1="7.62" x2="134.62" y2="7.62" width="0.1524" layer="91"/>
 <junction x="134.62" y="7.62"/>
-<pinref part="U$2" gate="G$1" pin="P$1"/>
-<pinref part="U$5" gate="G$1" pin="P$1"/>
-<pinref part="U$8" gate="G$1" pin="P$1"/>
-<pinref part="U$11" gate="G$1" pin="P$1"/>
-<pinref part="U$20" gate="G$1" pin="P$1"/>
-<pinref part="U$23" gate="G$1" pin="P$1"/>
-<pinref part="U$26" gate="G$1" pin="P$1"/>
-<pinref part="U$29" gate="G$1" pin="P$1"/>
+<pinref part="U$2" gate="G$1" pin="P$2"/>
+<pinref part="U$5" gate="G$1" pin="P$2"/>
+<pinref part="U$8" gate="G$1" pin="P$2"/>
+<pinref part="U$11" gate="G$1" pin="P$2"/>
+<pinref part="U$20" gate="G$1" pin="P$2"/>
+<pinref part="U$23" gate="G$1" pin="P$2"/>
+<pinref part="U$26" gate="G$1" pin="P$2"/>
+<pinref part="U$29" gate="G$1" pin="P$2"/>
 <pinref part="P+1" gate="1" pin="+12V"/>
 <wire x1="134.62" y1="81.28" x2="134.62" y2="76.2" width="0.1524" layer="91"/>
 <junction x="134.62" y="76.2"/>
-<pinref part="U$1" gate="G$1" pin="P$1"/>
-<pinref part="U$16" gate="G$1" pin="P$1"/>
+<pinref part="U$1" gate="G$1" pin="P$2"/>
+<pinref part="U$16" gate="G$1" pin="P$2"/>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
@@ -1013,26 +1009,26 @@
 </net>
 <net name="N$31" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="P$2"/>
-<pinref part="U$14" gate="G$1" pin="P$1"/>
+<pinref part="U$1" gate="G$1" pin="P$4"/>
+<pinref part="U$14" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="U$14" gate="G$1" pin="P$2"/>
-<pinref part="U$15" gate="G$1" pin="P$1"/>
+<pinref part="U$14" gate="G$1" pin="P$4"/>
+<pinref part="U$15" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="U$16" gate="G$1" pin="P$2"/>
-<pinref part="U$17" gate="G$1" pin="P$1"/>
+<pinref part="U$16" gate="G$1" pin="P$4"/>
+<pinref part="U$17" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$40" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="P$2"/>
-<pinref part="U$18" gate="G$1" pin="P$1"/>
+<pinref part="U$17" gate="G$1" pin="P$4"/>
+<pinref part="U$18" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="N$41" class="0">
@@ -1053,13 +1049,13 @@
 </net>
 <net name="N$43" class="0">
 <segment>
-<pinref part="U$15" gate="G$1" pin="P$2"/>
+<pinref part="U$15" gate="G$1" pin="P$4"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="U$18" gate="G$1" pin="P$2"/>
+<pinref part="U$18" gate="G$1" pin="P$4"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -1091,7 +1087,7 @@
 <junction x="-12.7" y="35.56"/>
 </segment>
 </net>
-<net name="+5V" class="0">
+<net name="N$15" class="0">
 <segment>
 <pinref part="P+4" gate="1" pin="+5V"/>
 <wire x1="73.66" y1="86.36" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
