@@ -666,14 +666,14 @@
 <part name="C1" library=" Barebones-Arduino" deviceset="CAPACITOR" device="-SMD"/>
 <part name="C2" library=" Barebones-Arduino" deviceset="CAPACITOR" device="-SMD"/>
 <part name="P+4" library=" Barebones-Arduino" deviceset="+5V" device=""/>
-<part name="PAD2" library="wirepad" deviceset="SMD2" device=""/>
-<part name="PAD3" library="wirepad" deviceset="SMD2" device=""/>
-<part name="PAD4" library="wirepad" deviceset="SMD2" device=""/>
-<part name="PAD5" library="wirepad" deviceset="SMD2" device=""/>
-<part name="PAD6" library="wirepad" deviceset="SMD2" device=""/>
-<part name="PAD1" library="wirepad" deviceset="SMD2" device=""/>
-<part name="PAD7" library="wirepad" deviceset="SMD2" device=""/>
-<part name="PAD8" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PB1" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PB2" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PB3" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PB4" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PB5" library="wirepad" deviceset="SMD2" device=""/>
+<part name="PB0" library="wirepad" deviceset="SMD2" device=""/>
+<part name="VCC" library="wirepad" deviceset="SMD2" device=""/>
+<part name="GND" library="wirepad" deviceset="SMD2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -725,7 +725,7 @@
 <instance part="U$18" gate="G$1" x="114.3" y="38.1" rot="MR0"/>
 <instance part="GND1" gate="1" x="45.72" y="25.4"/>
 <instance part="GND2" gate="1" x="-12.7" y="30.48"/>
-<instance part="P+2" gate="1" x="17.78" y="55.88"/>
+<instance part="P+2" gate="1" x="17.78" y="58.42"/>
 <instance part="GND3" gate="1" x="63.5" y="73.66"/>
 <instance part="P+3" gate="1" x="17.78" y="93.98"/>
 <instance part="GND5" gate="1" x="27.94" y="78.74"/>
@@ -733,14 +733,14 @@
 <instance part="C1" gate="G$1" x="25.4" y="86.36"/>
 <instance part="C2" gate="G$1" x="63.5" y="81.28"/>
 <instance part="P+4" gate="1" x="73.66" y="88.9"/>
-<instance part="PAD2" gate="1" x="22.86" y="40.64" rot="R180"/>
-<instance part="PAD3" gate="1" x="22.86" y="45.72" rot="R180"/>
-<instance part="PAD4" gate="1" x="-17.78" y="45.72"/>
-<instance part="PAD5" gate="1" x="-17.78" y="40.64"/>
-<instance part="PAD6" gate="1" x="-17.78" y="50.8"/>
-<instance part="PAD1" gate="1" x="22.86" y="35.56" rot="R180"/>
-<instance part="PAD7" gate="1" x="22.86" y="50.8" rot="R180"/>
-<instance part="PAD8" gate="1" x="-17.78" y="35.56"/>
+<instance part="PB1" gate="1" x="22.86" y="40.64" rot="R180"/>
+<instance part="PB2" gate="1" x="22.86" y="45.72" rot="R180"/>
+<instance part="PB3" gate="1" x="-17.78" y="45.72"/>
+<instance part="PB4" gate="1" x="-17.78" y="40.64"/>
+<instance part="PB5" gate="1" x="-17.78" y="50.8"/>
+<instance part="PB0" gate="1" x="22.86" y="35.56" rot="R180"/>
+<instance part="VCC" gate="1" x="22.86" y="50.8" rot="R180"/>
+<instance part="GND" gate="1" x="-17.78" y="35.56"/>
 </instances>
 <busses>
 </busses>
@@ -1082,7 +1082,7 @@
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="PAD8" gate="1" pin="P"/>
+<pinref part="GND" gate="1" pin="P"/>
 <pinref part="UC" gate="G$1" pin="GND"/>
 <wire x1="-15.24" y1="35.56" x2="-12.7" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
@@ -1103,52 +1103,52 @@
 </segment>
 <segment>
 <pinref part="UC" gate="G$1" pin="VCC"/>
-<pinref part="PAD7" gate="1" pin="P"/>
+<pinref part="VCC" gate="1" pin="P"/>
 <wire x1="15.24" y1="50.8" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+5V"/>
 <wire x1="17.78" y1="50.8" x2="20.32" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="53.34" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="55.88" x2="17.78" y2="50.8" width="0.1524" layer="91"/>
 <junction x="17.78" y="50.8"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="UC" gate="G$1" pin="PB1"/>
-<pinref part="PAD2" gate="1" pin="P"/>
+<pinref part="PB1" gate="1" pin="P"/>
 <wire x1="15.24" y1="40.64" x2="20.32" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="UC" gate="G$1" pin="PB2"/>
-<pinref part="PAD3" gate="1" pin="P"/>
+<pinref part="PB2" gate="1" pin="P"/>
 <wire x1="15.24" y1="45.72" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
 <segment>
 <pinref part="UC" gate="G$1" pin="PB5"/>
-<pinref part="PAD6" gate="1" pin="P"/>
+<pinref part="PB5" gate="1" pin="P"/>
 <wire x1="-10.16" y1="50.8" x2="-15.24" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$39" class="0">
 <segment>
 <pinref part="UC" gate="G$1" pin="PB3"/>
-<pinref part="PAD4" gate="1" pin="P"/>
+<pinref part="PB3" gate="1" pin="P"/>
 <wire x1="-10.16" y1="45.72" x2="-15.24" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$44" class="0">
 <segment>
 <pinref part="UC" gate="G$1" pin="PB4"/>
-<pinref part="PAD5" gate="1" pin="P"/>
+<pinref part="PB4" gate="1" pin="P"/>
 <wire x1="-10.16" y1="40.64" x2="-15.24" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$47" class="0">
 <segment>
-<pinref part="PAD1" gate="1" pin="P"/>
+<pinref part="PB0" gate="1" pin="P"/>
 <pinref part="UC" gate="G$1" pin="PB0"/>
 <wire x1="15.24" y1="35.56" x2="17.78" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="35.56" x2="20.32" y2="35.56" width="0.1524" layer="91"/>
