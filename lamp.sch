@@ -907,10 +907,10 @@
 <instance part="P+5" gate="1" x="-35.56" y="73.66"/>
 <instance part="GND7" gate="1" x="-35.56" y="58.42"/>
 <instance part="P1" gate="G$1" x="33.02" y="66.04" rot="R90"/>
-<instance part="R12" gate="G$1" x="38.1" y="60.96" rot="R270"/>
-<instance part="R13" gate="G$1" x="27.94" y="60.96" rot="R90"/>
-<instance part="P+1" gate="1" x="38.1" y="53.34" rot="R180"/>
-<instance part="GND8" gate="1" x="27.94" y="53.34"/>
+<instance part="R12" gate="G$1" x="43.18" y="66.04"/>
+<instance part="R13" gate="G$1" x="22.86" y="66.04"/>
+<instance part="P+1" gate="1" x="50.8" y="60.96" rot="R180"/>
+<instance part="GND8" gate="1" x="15.24" y="60.96"/>
 </instances>
 <busses>
 </busses>
@@ -1226,6 +1226,7 @@
 <segment>
 <pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="17.78" y1="66.04" x2="15.24" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -1305,6 +1306,7 @@
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
+<wire x1="48.26" y1="66.04" x2="50.8" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$45" class="0">
