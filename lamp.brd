@@ -1018,13 +1018,13 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="C2" pad="2"/>
 <contactref element="GND" pad="1"/>
 <contactref element="UC" pad="P$4"/>
-<polygon width="0.254" layer="16" isolate="0.3048">
+<polygon width="0.127" layer="16" isolate="0.3048">
 <vertex x="0" y="0"/>
 <vertex x="0" y="38.1"/>
 <vertex x="184.15" y="38.1"/>
 <vertex x="184.15" y="0"/>
 </polygon>
-<polygon width="0" layer="1" spacing="0.254" isolate="0.4064">
+<polygon width="0.127" layer="1" spacing="0.254" isolate="0.4064">
 <vertex x="0" y="0"/>
 <vertex x="184.15" y="0"/>
 <vertex x="184.15" y="38.1"/>

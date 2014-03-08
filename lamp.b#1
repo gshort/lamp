@@ -248,15 +248,15 @@
 <rectangle x1="178.1175" y1="30.1625" x2="181.61" y2="32.7025" layer="1"/>
 <rectangle x1="178.1175" y1="33.3375" x2="181.61" y2="35.8775" layer="1"/>
 <text x="10.795" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R10</text>
-<text x="23.495" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R9</text>
-<text x="36.195" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R8</text>
-<text x="48.895" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R7</text>
-<text x="61.595" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R6</text>
-<text x="65.405" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R5</text>
-<text x="78.105" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R4</text>
-<text x="90.805" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R3</text>
-<text x="103.505" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R2</text>
-<text x="116.205" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R1</text>
+<text x="29.845" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R9</text>
+<text x="48.895" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R8</text>
+<text x="67.945" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R7</text>
+<text x="86.995" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R6</text>
+<text x="97.155" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R5</text>
+<text x="116.205" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R4</text>
+<text x="135.255" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R3</text>
+<text x="154.305" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R2</text>
+<text x="173.355" y="34.925" size="1.016" layer="26" rot="MR180" align="top-center">R1</text>
 <text x="175.514" y="5.08" size="1.016" layer="25" rot="R90" align="bottom-center">L1</text>
 <text x="175.514" y="19.05" size="1.016" layer="25" rot="R90" align="bottom-center">L2</text>
 <text x="175.514" y="33.02" size="1.016" layer="25" rot="R90" align="bottom-center">L3</text>
@@ -716,7 +716,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="173.57" y1="33.87" x2="175.006" y2="35.306" width="0.6096" layer="16"/>
 <wire x1="176.8475" y1="34.6075" x2="176.8475" y2="35.306" width="0.6096" layer="1"/>
 <wire x1="176.8475" y1="35.306" x2="175.006" y2="35.306" width="0.6096" layer="1"/>
-<wire x1="175.006" y1="35.306" x2="175.006" y2="35.306" width="0" layer="19" extent="1-16"/>
+<via x="175.006" y="35.306" extent="1-16" drill="0.5"/>
 </signal>
 <signal name="N$3">
 <contactref element="U$2" pad="P$4"/>
@@ -1024,7 +1024,7 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="184.15" y="38.1"/>
 <vertex x="184.15" y="0"/>
 </polygon>
-<polygon width="0" layer="1" spacing="0.254" isolate="0.4064">
+<polygon width="0.127" layer="1" spacing="0.254" isolate="0.4064">
 <vertex x="0" y="0"/>
 <vertex x="184.15" y="0"/>
 <vertex x="184.15" y="38.1"/>
@@ -1224,9 +1224,6 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="84.328" y1="10.414" x2="82.2325" y2="10.414" width="0.3048" layer="16"/>
 <wire x1="82.2325" y1="10.414" x2="75.637" y2="10.414" width="0.3048" layer="16"/>
 <wire x1="75.637" y1="10.414" x2="74.621" y2="11.43" width="0.3048" layer="16"/>
-</signal>
-<signal name="N$14">
-<via x="175.006" y="35.306" extent="1-16" drill="0.5"/>
 </signal>
 </signals>
 </board>
