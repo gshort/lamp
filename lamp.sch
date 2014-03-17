@@ -809,7 +809,7 @@
 <part name="P2" library="lamp" deviceset="PVG3G" device="" value="2MΩ"/>
 <part name="C4" library=" Barebones-Arduino" deviceset="CAPACITOR" device="-SMD" value="100pF"/>
 <part name="GND9" library=" Barebones-Arduino" deviceset="GND" device=""/>
-<part name="R13" library=" Barebones-Arduino" deviceset="RESISTOR" device="-SMD" value="100kΩ"/>
+<part name="R13" library=" Barebones-Arduino" deviceset="RESISTOR" device="-SMD" value="10kΩ"/>
 <part name="C5" library=" Barebones-Arduino" deviceset="CAPACITOR" device="-SMD" value="1µF"/>
 <part name="GND1" library=" Barebones-Arduino" deviceset="GND" device=""/>
 <part name="F1" library="lamp" deviceset="SI2318DS" device=""/>

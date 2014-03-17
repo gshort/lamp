@@ -126,16 +126,20 @@
 <library name="lamp">
 <packages>
 <package name="PLCC4">
-<smd name="P$1" x="-1.5875" y="0.9525" dx="2.54" dy="1.27" layer="1"/>
-<smd name="P$4" x="1.5875" y="0.9525" dx="2.54" dy="1.27" layer="1"/>
-<smd name="P$3" x="1.5875" y="-0.9525" dx="2.54" dy="1.27" layer="1"/>
-<smd name="P$2" x="-1.5875" y="-0.9525" dx="2.54" dy="1.27" layer="1"/>
+<smd name="P$1" x="-1.5875" y="0.9525" dx="2.54" dy="1.27" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$4" x="1.5875" y="0.9525" dx="2.54" dy="1.27" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$3" x="1.5875" y="-0.9525" dx="2.54" dy="1.27" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$2" x="-1.5875" y="-0.9525" dx="2.54" dy="1.27" layer="1" stop="no" thermals="no" cream="no"/>
 <circle x="-3.2" y="1.9" radius="0.1" width="0.2" layer="21"/>
 <rectangle x1="-1.7" y1="-1.5" x2="1.7" y2="1.5" layer="51"/>
 <rectangle x1="-1.8" y1="0.35" x2="-1.7" y2="1.15" layer="51"/>
 <rectangle x1="-1.8" y1="-1.15" x2="-1.7" y2="-0.35" layer="51"/>
 <rectangle x1="1.7" y1="0.35" x2="1.8" y2="1.15" layer="51"/>
 <rectangle x1="1.7" y1="-1.15" x2="1.8" y2="-0.35" layer="51"/>
+<rectangle x1="-2.25" y1="-1.25" x2="-0.75" y2="-0.25" layer="29"/>
+<rectangle x1="-2.25" y1="0.25" x2="-0.75" y2="1.25" layer="29"/>
+<rectangle x1="0.75" y1="0.25" x2="2.25" y2="1.25" layer="29"/>
+<rectangle x1="0.75" y1="-1.25" x2="2.25" y2="-0.25" layer="29"/>
 </package>
 <package name="TSSOP-8">
 <text x="-2.5275" y="0" size="1.27" layer="25" rot="R90" align="center">&gt;NAME</text>
