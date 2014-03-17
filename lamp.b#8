@@ -287,8 +287,8 @@
 <text x="4.064" y="5.08" size="1.778" layer="25" rot="R90" align="bottom-center">L28</text>
 <text x="4.064" y="19.05" size="1.778" layer="25" rot="R90" align="bottom-center">L29</text>
 <text x="4.064" y="33.02" size="1.778" layer="25" rot="R90" align="bottom-center">L30</text>
-<text x="106.934" y="16.891" size="1.778" layer="26" rot="MR180" align="top-center">R12</text>
-<text x="106.934" y="5.969" size="1.778" layer="26" rot="MR0" align="top-center">R11</text>
+<text x="106.934" y="24.511" size="1.778" layer="26" rot="MR180" align="top-center">R12</text>
+<text x="106.934" y="13.589" size="1.778" layer="26" rot="MR0" align="top-center">R11</text>
 <text x="96.139" y="15.748" size="1.778" layer="26" rot="MR180" align="top-center">C2</text>
 <text x="96.139" y="10.668" size="1.778" layer="26" rot="MR0" align="top-center">C1</text>
 <text x="85.979" y="13.208" size="1.778" layer="26" rot="MR90" align="top-center">C3</text>
@@ -297,10 +297,10 @@
 <text x="4.064" y="10.0236" size="1.778" layer="26" rot="MR90" align="top-center">F2</text>
 <text x="70.231" y="15.24" size="1.778" layer="26" rot="MR0" align="top-center">P2</text>
 <text x="77.089" y="13.208" size="1.778" layer="26" rot="MR0" align="top-center">C4</text>
-<text x="113.919" y="7.62" size="1.778" layer="26" rot="MR0" align="top-center">P1</text>
+<text x="113.919" y="15.24" size="1.778" layer="26" rot="MR0" align="top-center">P1</text>
 <text x="63.881" y="19.05" size="1.778" layer="26" rot="MR90" align="top-center">SWITCH
 SENSITIVITY</text>
-<text x="120.269" y="11.43" size="1.778" layer="26" rot="SMR270" align="top-center">BRIGHTNESS</text>
+<text x="120.269" y="19.05" size="1.778" layer="26" rot="SMR270" align="top-center">BRIGHTNESS</text>
 <rectangle x1="82.8675" y1="19.3675" x2="87.9475" y2="21.9075" layer="1"/>
 <rectangle x1="82.8675" y1="16.1925" x2="87.9475" y2="18.7325" layer="1"/>
 <rectangle x1="96.2025" y1="16.1925" x2="101.2825" y2="18.7325" layer="1"/>
