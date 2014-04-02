@@ -807,12 +807,12 @@
 <part name="P2" library="lamp" deviceset="PVG3G" device="" value="2MΩ"/>
 <part name="C4" library=" Barebones-Arduino" deviceset="CAPACITOR" device="-SMD" value="100pF"/>
 <part name="GND9" library=" Barebones-Arduino" deviceset="GND" device=""/>
-<part name="R13" library=" Barebones-Arduino" deviceset="RESISTOR" device="-SMD" value="10kΩ"/>
+<part name="R15" library=" Barebones-Arduino" deviceset="RESISTOR" device="-SMD" value="10kΩ"/>
 <part name="C5" library=" Barebones-Arduino" deviceset="CAPACITOR" device="-SMD" value="1µF"/>
 <part name="GND1" library=" Barebones-Arduino" deviceset="GND" device=""/>
 <part name="F1" library="lamp" deviceset="SI2318DS" device=""/>
-<part name="R14" library=" Barebones-Arduino" deviceset="RESISTOR" device="-SMD" value="100Ω"/>
-<part name="R15" library=" Barebones-Arduino" deviceset="RESISTOR" device="-SMD" value="100kΩ"/>
+<part name="R13" library=" Barebones-Arduino" deviceset="RESISTOR" device="-SMD" value="100Ω"/>
+<part name="R14" library=" Barebones-Arduino" deviceset="RESISTOR" device="-SMD" value="100kΩ"/>
 <part name="GND10" library=" Barebones-Arduino" deviceset="GND" device=""/>
 </parts>
 <sheets>
@@ -893,12 +893,12 @@
 <instance part="P2" gate="G$1" x="-25.4" y="43.18" rot="R180"/>
 <instance part="C4" gate="G$1" x="-38.1" y="45.72"/>
 <instance part="GND9" gate="1" x="-38.1" y="38.1"/>
-<instance part="R13" gate="G$1" x="7.62" y="76.2" rot="R90"/>
+<instance part="R15" gate="G$1" x="7.62" y="76.2" rot="R90"/>
 <instance part="C5" gate="G$1" x="-2.54" y="86.36"/>
 <instance part="GND1" gate="1" x="58.42" y="27.94"/>
 <instance part="F1" gate="G$1" x="58.42" y="35.56" rot="R270"/>
-<instance part="R14" gate="G$1" x="43.18" y="33.02"/>
-<instance part="R15" gate="G$1" x="50.8" y="27.94" rot="R90"/>
+<instance part="R13" gate="G$1" x="43.18" y="33.02"/>
+<instance part="R14" gate="G$1" x="50.8" y="27.94" rot="R90"/>
 <instance part="GND10" gate="1" x="50.8" y="20.32"/>
 </instances>
 <busses>
@@ -1122,7 +1122,7 @@
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
-<pinref part="R13" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="R12" gate="G$1" pin="2"/>
@@ -1134,7 +1134,7 @@
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 </net>
@@ -1164,7 +1164,7 @@
 <wire x1="17.78" y1="35.56" x2="20.32" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="17.78" y1="35.56" x2="20.32" y2="33.02" width="0.1524" layer="91"/>
 <junction x="17.78" y="35.56"/>
-<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="R13" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="33.02" x2="38.1" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -1284,7 +1284,7 @@
 <net name="N$14" class="0">
 <segment>
 <pinref part="F2" gate="G$1" pin="GATE"/>
-<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="7.62" y1="81.28" x2="7.62" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="-2.54" y1="81.28" x2="7.62" y2="81.28" width="0.1524" layer="91"/>
@@ -1376,8 +1376,8 @@
 </net>
 <net name="N$15" class="0">
 <segment>
+<pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="R14" gate="G$1" pin="2"/>
-<pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="F1" gate="G$1" pin="GATE"/>
 <wire x1="50.8" y1="33.02" x2="53.34" y2="33.02" width="0.1524" layer="91"/>
 <junction x="50.8" y="33.02"/>
